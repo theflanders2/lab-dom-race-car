@@ -4,9 +4,13 @@ window.onload = function () {
 
   startButton.addEventListener("click", function () {
     startGame();
+    let game; // initialize the variable 'game'
   });
 
   function startGame() {
     console.log("start game");
+    game = new Game(); // create an instance of the game
+
+    game.start(); // execute the start() method
   }
 };
